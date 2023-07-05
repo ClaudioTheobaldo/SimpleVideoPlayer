@@ -71,7 +71,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ExecutablePath>E:\SimpleVideoPlayer\CppVideoPlayer\libswscale;E:\SimpleVideoPlayer\CppVideoPlayer\libswresample;E:\SimpleVideoPlayer\CppVideoPlayer\libavutil;E:\SimpleVideoPlayer\CppVideoPlayer\libavformat;E:\SimpleVideoPlayer\CppVideoPlayer\libavfilter;E:\SimpleVideoPlayer\CppVideoPlayer\libavdevice;E:\SimpleVideoPlayer\CppVideoPlayer\libavcodec;$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath>CppVideoPlayer\libswscale;CppVideoPlayer\libswresample;CppVideoPlayer\libavutil;CppVideoPlayer\libavformat;CppVideoPlayer\libavfilter;CppVideoPlayer\libavdevice;CppVideoPlayer\libavcodec;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -112,7 +112,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swresample.lib;swscale.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\claud\Documents\SimpleVideoPlayer\CppVideoPlayer\ffmpeg;E:\SimpleVideoPlayer\CppVideoPlayer\ffmpeg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>ffmpeg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
