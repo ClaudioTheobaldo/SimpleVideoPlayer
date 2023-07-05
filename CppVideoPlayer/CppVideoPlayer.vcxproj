@@ -111,8 +111,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>E:\SimpleVideoPlayer\CppVideoPlayer\ffmpeg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swresample.lib;swscale.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\claud\Documents\SimpleVideoPlayer\CppVideoPlayer\ffmpeg;E:\SimpleVideoPlayer\CppVideoPlayer\ffmpeg;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -134,13 +134,18 @@
   <ItemGroup>
     <ClInclude Include="CppVideoPlayer.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="MultimediaTimer.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utils.h" />
     <ClInclude Include="VideoPlayer.h" />
+    <ClInclude Include="WinTimer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppVideoPlayer.cpp" />
+    <ClCompile Include="MultimediaTimer.cpp" />
     <ClCompile Include="VideoPlayer.cpp" />
+    <ClCompile Include="WinTimer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CppVideoPlayer.rc" />
