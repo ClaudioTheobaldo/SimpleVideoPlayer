@@ -1,0 +1,22 @@
+﻿<Window x:Class="DotNetVideoPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DotNetVideoPlayer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1024">
+    <Grid>
+        <TextBox Name="FileName" Margin="74,18,195,692" Text="..\Data\Wildlife.mp4"></TextBox>
+        <Image Name="imgMain" HorizontalAlignment="Left" Margin="232,89,0,0" VerticalAlignment="Top" Width="640" Height="480"/>
+        <Canvas x:Name="Cnv" HorizontalAlignment="Left" Margin="232,89,0,0" VerticalAlignment="Top" Width="640" Height="480"></Canvas>
+        <Button Name="Load" Content="Load" Margin="74,104,821,596"/>
+        <Button Name="Start" Content="Start" Margin="74,180,821,525"/>
+        <Button Name="Stop" Content="Stop" Margin="74,256,821,443"/>
+        <Button Name="Flush" Content="Flush" Margin="74,344,821,354"/>
+        <CheckBox Name="AutoReset" Content="AutoReset" Margin="74,415,821,283"></CheckBox>
+        <Slider Name="videoSlider" Margin="232,603,152,94" TickPlacement="BottomRight" TickFrequency="1"/>
+        <Label Name="lblCurrentTime" Content="00:00:00" Margin="232,644,706,39"/>
+        <Label x:Name="lblFinalTime" Content="00:00:00" Margin="786,644,152,39"/>
+    </Grid>
+</Window>
