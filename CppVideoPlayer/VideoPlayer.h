@@ -84,4 +84,3 @@ class VideoPlayer
 		void SetAutoReset(bool shouldResetAfterEnd);
 		bool GetAutoReset();
 };
-

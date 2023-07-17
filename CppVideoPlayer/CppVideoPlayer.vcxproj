@@ -72,6 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ExecutablePath>CppVideoPlayer\libswscale;CppVideoPlayer\libswresample;CppVideoPlayer\libavutil;CppVideoPlayer\libavformat;CppVideoPlayer\libavfilter;CppVideoPlayer\libavdevice;CppVideoPlayer\libavcodec;$(ExecutablePath)</ExecutablePath>
+    <OutDir>$(SolutionDir)\..\Output</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

@@ -372,6 +372,8 @@ void VideoPlayer::Seek(uint64_t position)
 {
 	if (!fLoaded)
 		return;
+	auto wasPlaying = fPlaying;
+	Stop();
 	uint64_t scaledPos = fFormatCtx->streams[fVideoStreamIndex]->time_base.den * position;
 	auto r = av_seek_frame(fFormatCtx, fVideoStreamIndex, scaledPos, 0);
 	avcodec_flush_buffers(fCodecCtx);
@@ -379,6 +381,8 @@ void VideoPlayer::Seek(uint64_t position)
 		ClearFrameDataToShow();
 	delay = 0;
 	lastPTS = 0;
+	if (wasPlaying)
+		Play();
 }
 
 FrameData* VideoPlayer::AVFrameToFrameData(AVFrame* frame)
